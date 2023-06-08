@@ -32,8 +32,6 @@ if(isset($_POST['submit']))
     //Execute prepared statement
     $rs = mysqli_stmt_execute($stmt);
 
-    //fire query to save entries and check it with if statement
-    $rs = mysqli_query($con, $sql);
     if($rs)
     {
         echo "Message has been sent successfully!";
